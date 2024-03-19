@@ -1,0 +1,470 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body{
+    background-color: black;
+}
+
+/* Shooting Stars */
+
+.shooting-stars {
+
+  position: absolute;
+  
+  z-index: -10;
+  
+  }
+  
+  .stars1 {
+  
+  color: rgb(245, 245, 171);
+  
+  text-shadow: rgb(190, 190, 232);
+  
+  font-size: 1.4em;
+  
+  letter-spacing: -2px;
+  
+  text-shadow: 2px 2px 20px yellow;
+  
+  opacity: 0.9;
+  
+  }
+  
+  #star1 {
+  
+  position: absolute;
+  
+  top: 0px;
+  right: 10vw;
+  animation: 3.3s shootingStar linear infinite;
+  
+  }
+  
+  #star2 {
+  position: absolute;
+  top: 0px;
+  right: 50vw;
+  animation: 2.7s shootingStar linear infinite;
+  }
+  
+  #star3 {
+  position: absolute;
+  top: -15vh;
+  right: 60vw;
+  animation: 4.2s shootingStar linear infinite;
+  animation-delay: 1.2s;
+  }
+  
+  #star4 {
+  position: absolute;
+  top: -30vh;
+  right: 90vw;
+  animation: 4.3s shootingStar linear infinite;
+  animation-delay: 2s;
+  }
+  
+  #star5 {
+  position: absolute;
+  top: -40vh;
+  right: 30vw;
+  animation: 3s shootingStar linear infinite;
+  }
+  
+  #star6 {
+  position: absolute;
+  top: -3vh;
+  right: -50vw;
+  animation: 3s shootingStar linear infinite;
+  animation-delay: 1.2s;
+  }
+  
+  #star7 {
+  position: absolute;
+  top: -22px;
+  right: -20vw;
+  animation: 2s shootingStar linear infinite;
+  animation-delay: 2.2s;
+  }
+  
+  @keyframes stars-fall {
+  0% {
+  line-height: 5px;
+  }
+  100% {
+  line-height: 10px;
+  }
+  }
+  @keyframes shootingStar {
+  0% {
+  transform: rotateZ(-40deg) translateX(0%) translateY(0%);
+  }
+  100% {
+  transform: rotateZ(-70deg) translateX(-150vw) translateY(50vh);
+  }
+  }
+
+
+
+
+.outer-container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    min-height: 100%; /* 至少占满整个视口的高度 */
+    margin-top: 30px;
+
+
+}
+
+.loading{
+  width: 50%; /* 或任何你需要的宽度 */
+}
+
+h1{
+    color: white;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4em;
+    text-align: center;
+}
+p{
+  color: white;
+  font-size: 1em;
+  text-align: center;
+}
+
+.loadingText{
+    color: white;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1em;
+    text-align: center;
+    padding-top:20px ;
+    
+}
+      
+      
+.loadingImg{
+    width: 100px;
+    text-align: center;
+    margin: 0 auto;
+
+    }  
+
+ .container {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 200px; /* 或任何你想要的高度 */
+
+}
+/*动画*/
+.container img {
+
+    transition: transform 0.6s ease; /* 添加过渡效果 */
+}
+
+.container:hover img {
+    transform: scale(1.1); /* 鼠标悬停时放大图片 */
+}
+
+
+
+/*homepage*/
+
+.typewriter h2{
+    overflow: hidden; /* 隐藏超出容器的部分 */
+    border-right: .15em solid orange; /* 设置光标闪烁效果 */
+    white-space: nowrap; /* 确保文本不换行 */
+    margin: 0 auto; /* 文本水平居中 */
+    letter-spacing: .15em; /* 设置字母之间的间距 */
+    animation: typing 6s steps(30, end) infinite, blink-caret .75s step-end infinite; /* 应用打字效果和光标闪烁效果 */
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: peachpuff }
+}
+
+
+
+.homeButton{
+    border: none;
+    border-radius: 50px;
+    color: transparent;
+    padding: 5px 5px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 7px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+ }
+
+.homeButton{    
+    background-color: transparent; 
+    color: white; 
+    
+    margin-left: 1340px;
+    margin-top: 20px;
+  }
+
+  .homeButton:hover {
+        background-color: white;
+        color: black;
+        border: 0.1px solid whitesmoke;
+  }
+  
+
+
+h2{
+    color: white;
+    font-family: "Nerko One", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 3em;
+ }
+      
+
+ .homepageIcon{
+     width: 110px;
+     align-items: center;
+ }
+
+ .container1 {
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 70px; /* 或任何你想要的高度 */
+   margin-top: 120px;
+}
+ 
+.homepageText{
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-style: normal;
+    text-align: center;
+    font-size: 0.8em;
+    line-height: 25px;
+}
+
+.Midcontainer{
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 400px; /* 或任何你想要的高度 */
+}
+.containerHomepage{
+   width: 850px;
+margin-top: auto;
+}
+
+.buttoncontainer{
+    display: flex;
+    justify-content: center; /* 水平居中 */
+    align-items: center; /* 垂直居中 */
+    height: 700px; /* 或任何你想要的高度 */
+    margin-top:-100px ;
+}
+
+.button1 {
+    width: 150px; /* 设置按钮宽度 */
+    height: 150px; /* 设置按钮高度，确保和宽度相同以形成圆形 */
+    border-radius: 50%; /* 使按钮边缘成圆形 */
+    border: 2px solid rgb(255, 255, 255); /* 设置边框（可选） */
+    background-color: rgb(0, 0, 0); /* 设置背景颜色 */
+    color: white; /* 设置文字颜色 */
+    font-size: 12px; /* 设置文字大小 */
+    text-align: center; /* 确保文字居中 */
+    line-height: 96px; /* 通过line-height来垂直居中文字，值应略小于height因为边框的宽度 */
+    cursor: pointer; /* 鼠标悬停时显示手形图标 */
+    outline: none; /* 移除焦点时的轮廓 */
+    margin-left:10px;
+    margin-top: 100px;
+  }
+  .subNav{
+    text-decoration: none;
+    color: white;
+    font-size: 1.1em;
+
+  }
+  .button2 {
+    width: 150px; /* 设置按钮宽度 */
+    height: 150px; /* 设置按钮高度，确保和宽度相同以形成圆形 */
+    border-radius: 50%; /* 使按钮边缘成圆形 */
+    border: 2px solid rgb(255, 255, 255); /* 设置边框（可选） */
+    background-color: rgb(0, 0, 0); /* 设置背景颜色 */
+    color: white; /* 设置文字颜色 */
+    font-size: 12px; /* 设置文字大小 */
+    text-align: center; /* 确保文字居中 */
+    line-height: 96px; /* 通过line-height来垂直居中文字，值应略小于height因为边框的宽度 */
+    cursor: pointer; /* 鼠标悬停时显示手形图标 */
+    outline: none; /* 移除焦点时的轮廓 */
+    margin-left:30px;
+  }
+  .button3 {
+    width: 150px; /* 设置按钮宽度 */
+    height: 150px; /* 设置按钮高度，确保和宽度相同以形成圆形 */
+    border-radius: 50%; /* 使按钮边缘成圆形 */
+    border: 2px solid rgb(255, 255, 255); /* 设置边框（可选） */
+    background-color: rgb(0, 0, 0); /* 设置背景颜色 */
+    color: white; /* 设置文字颜色 */
+    font-size: 12px; /* 设置文字大小 */
+    text-align: center; /* 确保文字居中 */
+    line-height: 96px; /* 通过line-height来垂直居中文字，值应略小于height因为边框的宽度 */
+    cursor: pointer; /* 鼠标悬停时显示手形图标 */
+    outline: none; /* 移除焦点时的轮廓 */
+    margin-left:30px;
+  }
+  .button4 {
+    width: 150px; /* 设置按钮宽度 */
+    height: 150px; /* 设置按钮高度，确保和宽度相同以形成圆形 */
+    border-radius: 50%; /* 使按钮边缘成圆形 */
+    border: 2px solid rgb(255, 255, 255); /* 设置边框（可选） */
+    background-color: rgb(0, 0, 0); /* 设置背景颜色 */
+    color: white; /* 设置文字颜色 */
+    font-size: 12px; /* 设置文字大小 */
+    text-align: center; /* 确保文字居中 */
+    line-height: 96px; /* 通过line-height来垂直居中文字，值应略小于height因为边框的宽度 */
+    cursor: pointer; /* 鼠标悬停时显示手形图标 */
+    outline: none; /* 移除焦点时的轮廓 */
+    margin-left:50px;
+    margin-top: 80px;
+  }
+
+
+
+
+
+  /* development page */
+    /* 基础样式 */
+
+    .developmentBox{
+      display: flex;
+      width: auto;
+    }
+
+    .tabs {
+        display: flex;
+        flex-direction: column;
+      
+    }
+    .tab-links {
+        display: flex;
+    }
+    .tab-content {
+        display: none;
+        width:50%;
+        height: auto ;
+        justify-content: center; /* 将容器内的内容水平居中 */
+        align-items: center; /* 将容器内的内容垂直居中 */
+        height: 100vh; /* 让容器占据整个视口的高度 */
+    }
+
+    .tab-links a {
+        padding: 10px;
+        text-decoration: none;
+        
+        margin-right: 5px;
+        color: black;
+        transition: transform 0.6s ease; /* 添加过渡效果 */
+    }
+    .tab-links a:hover {
+      transform: scale(1.1); /* 鼠标悬停时放大图片 */
+        
+    }
+    /* 当前激活的选项卡链接样式 */
+    .tab-links a:target {
+      transform: scale(1.1); /* 鼠标悬停时放大图片 */
+        
+    }
+    /* 显示对应的选项卡内容 */
+    .tab-content:target {
+        display: block;
+    }
+    .subNavImg{
+      width:80px;
+    }
+    .subNavImg1{
+      height: 150px;
+    }
+    .subNavImg2{
+      height: 100px;
+      padding-top: 40px;
+    }
+    .subNavImg3{
+      height: 150px;
+    }
+    .subNavImg5{
+      height: 150px;
+    }
+    .subNavImg9{
+      height: 170px;
+    }
+    .subNavImg10{
+      height: 120px;
+      margin-left: 6px;
+      margin-top: 60px;
+    }
+
+    .subNavImg11{
+      height: 130px;
+      margin-top: 40px;
+      margin-left: 8px;
+    }
+    .subNavImg12{
+      height: 170px;
+    }
+    .subNavImgContainer{
+      height:180px;
+    }
+    .subNavText{
+      color: #f7f5ed;
+      font-family: "Madimi One", sans-serif;
+      font-weight: 400;
+      font-style: normal;
+      font-size: 0.8em;
+      text-align: center;
+      
+    }
+
+.w1_research{
+margin-top: 50px;
+width: 50%;
+align-items: center;
+margin-bottom: 50px;
+margin-left: 190px;
+
+}
+.w3_research{
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-items: center;
+  margin-left: 100px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: auto auto; /* 设置容器为两列，每列宽度自动 */
+}
+
+.W1other img {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  align-items: center;
+  margin-left: 100px;
+  width: 70%;
+  display: grid;
+  grid-template-columns: auto auto; /* 设置容器为两列，每列宽度自动 */
+}
+
+
+
